@@ -25,7 +25,7 @@ allprojects {
         maven {
             url "https://nexus.seedfinding.com/repository/maven-seedfinding-snapshots"
         }
-    }
+    }     maven {url "https://jitpack.io"}
 }
 
 application{
@@ -37,7 +37,7 @@ dependencies {
     implementation('com.seedfinding:mc_seed:1.171.2') { transitive = false }
     implementation('com.seedfinding:mc_core:1.194.0') { transitive = false }
     implementation('com.seedfinding:mc_noise:1.171.1') { transitive = false }
-
+    implementation('com.github.profotoce59:VillageGenerator:main-SNAPSHOT'){transitive=false}
     implementation('com.seedfinding:mc_biome:1.171.1') { transitive = false }
     implementation('com.seedfinding:mc_terrain:1.171.1') { transitive = false }
     implementation('com.seedfinding:mc_feature:1.171.5') { transitive = false }
@@ -80,3 +80,4 @@ publishing {
         }
     }
 }
+
